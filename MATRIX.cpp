@@ -35,24 +35,21 @@ int main ()
 
     int i;
     int j;
-    cout<<"ENTER NUMBER OF ROWS";
-    cout<<"ENTER NUMBER OF COLUMN";
+    cout<<"ENTER NUMBER OF ROWS AND COLUMN";
+    
     cin>>i>>j;
     if(*(*(arr+i)+j)==1)
     {
         alive--;
         k++;
-        cout<<k<<"ENEMY DESTROYED";
+        cout<<k<<"ENEMY DESTROYED"<<endl;
     }
     else{
-        cout<<"NO ENEMY DESTROYED";
+        cout<<"NO ENEMY DESTROYED"<<endl;
 
     }
 }
     while(alive!=0);
 
-
 cout<<"ALL ENEMIES DESTROYED";
-
-
 }
