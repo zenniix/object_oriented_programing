@@ -30,14 +30,15 @@ int main ()
     }
    }
    do{ 
-   cout<<"ALIVE ENEMY"<<alive;
+   cout<<"ALIVE ENEMY"<<alive<<endl;
    int k=0;
 
     int i;
     int j;
-    cout<<"ENTER NUMBER OF ROWS AND COLUMN";
+    cout<<"ENTER NUMBER OF ROWS AND COLUMN = ";
     
     cin>>i>>j;
+    
     if(*(*(arr+i)+j)==1)
     {
         alive--;
@@ -46,10 +47,10 @@ int main ()
     }
     else{
         cout<<"NO ENEMY DESTROYED"<<endl;
-
+          
     }
 }
     while(alive!=0);
 
-cout<<"ALL ENEMIES DESTROYED";
-}
+cout<<"ALL ENEMIES DESTROYED"<<endl;
+}   
